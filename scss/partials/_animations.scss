@@ -1,0 +1,32 @@
+// Tilted Can Animation
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.learn-more__image:hover {
+    .learn-more__tiltedcan {
+        animation: rotate 2s infinite linear;
+    }    
+}
+
+// Discount Section Animation
+
+@keyframes color-change {
+    from {
+        background-color: #000000;
+    }
+
+    to {
+        background-color: #5bacc4;
+    }
+}
+
+.discount {
+    animation: color-change 2.5s infinite linear alternate;
+}

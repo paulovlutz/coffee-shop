@@ -1,0 +1,41 @@
+@mixin button {
+    width: 180px;
+    height: 55px;
+    background-color: #5bacc4;
+    color: #fff;
+    padding: 0;
+    font-size: 1.3125rem;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.button {
+    @include button();
+    &:before {
+        content: "";
+        width: 177px;
+        height: 53px;
+        border-width: 2px;
+        border: solid #000;
+        position: absolute;
+        offset: 5px;
+        bottom: 1px;
+        right: 0.8px;  
+    }
+
+    &:active {
+        &:before {
+            width: 100%;
+            height: 100%;
+            bottom: -2px;
+            right: -2px;
+        }
+    }
+}
+
+// Main Learn More Button
+
+.learn-more__button {
+    margin-top: 20px;
+    display: block;
+}

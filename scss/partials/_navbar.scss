@@ -1,0 +1,50 @@
+.nav {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 20px;
+
+    &__logo {
+        display: inline;
+    }
+
+    &__brand {
+        font-size: 3.125rem;
+        font-weight: 100;
+        display: inline;
+        margin: 2px;
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            opacity: 80%;
+        }
+    }
+
+    &__link {
+        list-style-type: none;
+        display: inline-flex;
+        line-height: 50px;
+
+        &-section {
+            padding-right: 30px;
+            display: flex;
+            width: 100%;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+
+    &__tag {
+        text-decoration: none;
+        color: #393939;
+        margin-right: 10px;
+
+        &:hover {
+            opacity: 80%;
+        }
+
+        &--blue {
+            color: #5BACC3;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@mixin menu-description {
+    font-size: 1.125rem;
+    font-style: italic;
+    width: 50%;
+    height: 18%;
+    border: 4px;
+    offset: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+@mixin menu-price {
+    color: #5BACC3;
+    margin-bottom: 0;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+.menu-section {
+    background-color: #FFF0ED;
+
+    &--blue {
+        background-color: #F7F7F7;
+    }
+
+    &__title, 
+    &__item,
+    &__price {
+        text-align: center;
+        margin: 0;
+    }
+
+    &__title {
+        padding-top: 2%;
+        color: #464646;
+    }
+
+    &__item {
+        margin: 2vh;
+    }
+
+    &__description {
+        @include menu-description();
+    }
+
+    &__price {
+        @include menu-price();
+    }
+}

@@ -1,0 +1,23 @@
+.hero {
+    display: inline-flex;
+    padding: 2% 5% 2% 8%;
+
+    &__content {
+        display: inline;
+        box-sizing: border-box;
+    }
+
+    &__image {
+        display: inline;
+        box-sizing: border-box;
+    }
+
+    &__beans {
+        height: 70%;
+    }
+
+    &__text {
+        width: 55%;
+        margin-bottom: 5%;
+    }
+}

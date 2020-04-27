@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* I added Arial to be able to see on Windows */
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-size: 3.75rem;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 2.0625rem;
+    font-weight: 100;
+}
+
+.text {
+    font-size: 2.0625rem;
+}
+
+.small-text {
+    font-size: 1.3125rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.learn-more__smaller-text {
+    font-size: 1.125rem;
+}
+
+.discount__text {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 50px;
+}
+
+.footer__smaller-text {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 0.3;
+}
+
+.icon {
+    height: 30px;
+}

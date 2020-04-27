@@ -1,0 +1,312 @@
+/* Global */
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* I added Arial to be able to see on Windows */
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-size: 3.75rem;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 2.0625rem;
+    font-weight: 100;
+}
+
+.button {
+    width: 180px;
+    height: 55px;
+    background-color: #5bacc4;
+    color: #fff;
+    padding: 0;
+    border: none;
+    font-size: 1.3125rem;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.button:before {
+    content: "";
+    width: 180px;
+    height: 55px;
+    border: 2px solid #000;
+    position: absolute;
+    bottom: 1px;  
+    right: 1px;  
+}
+
+.icon {
+    height: 30px;
+}
+
+.small-text {
+    font-size: 1.3125rem;
+}
+
+.text {
+    font-size: 2.0625rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Header */
+
+header {
+    background-color: #fff0ed;
+}
+
+/* navbar */
+
+.nav {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.nav__logo {
+    display: inline;
+}
+
+.nav__brand {
+    font-size: 3.125rem;
+    font-weight: 100;
+    display: inline;
+    margin: 2px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav__link {
+    list-style-type: none;
+    display: inline-flex;
+    line-height: 50px;
+}
+
+.nav__link-section {
+    padding-right: 30px;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.nav__tag {
+    text-decoration: none;
+    color: #393939;
+    margin-right: 10px;
+}
+
+.nav__tag--blue {
+    color: #5BACC3;
+}
+
+/* Hero Banner */
+
+.hero {
+    display: inline-flex;
+    padding: 2% 5% 2% 8%;
+}
+
+.hero__content {
+    display: inline;
+    box-sizing: border-box;
+}
+
+.hero__image {
+    display: inline;
+    box-sizing: border-box;
+}
+
+.hero__beans {
+    height: 70%;
+}
+
+.hero__text {
+    width: 55%;
+    margin-bottom: 5%;
+}
+
+/* Products */
+
+.products {
+    text-align: center;
+    background-color: #f0efef;
+}
+
+.products h2 {
+    margin-top: 0;
+    padding-top: 2%;
+}
+
+.products__button {
+    margin-bottom: 7vw;
+}
+
+.product {
+    background-color: #fff;
+    width: 350px;
+    height: 40%;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 50px;
+    padding: 1% 0 0 0;
+}
+
+.product__image {
+    height: 30vh;
+    padding-bottom: 2%;
+}
+
+.product__text {
+    background-color: #fff0ed;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    padding-left: 4%;
+    height: 145px;
+}
+
+.product__text--description {
+    width: 70%;
+}
+
+.product__text--description h3 {
+    margin-bottom: 0;
+}
+
+.product__text--description p {
+    margin-top: 5px;
+}
+
+.product__text--price {
+    align-self: center;
+    margin-left: 20px;
+    color: #5bacc4;
+    font-weight: bold;
+}
+
+/* Learn More Section */
+
+.learn-more {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0 5% 0;
+}
+
+.learn-more__text {
+    max-width: 350px;
+}
+
+.learn-more__smaller-text {
+    font-size: 1.125rem;
+}
+
+.learn-more__icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.learn-more__button {
+    margin-top: 20px;
+    display: block;
+}
+
+.learn-more__image {
+    width: 50%;
+    background-image: url("../assets/coldbrewbackground.png");
+    background-repeat: round;
+    margin-left: 50px;
+    width: 435px;
+    height: 435px;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+}
+
+.learn-more__image--detail {
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    border: 4px solid #5BACC3;
+    offset: 25px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.learn-more__tiltedcan {
+    align-self: center;
+}
+
+/* Discout */
+
+.discount {
+    min-width: 400px;
+    max-width: 60%;
+    background-color: #000;
+    color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    margin: auto;
+    padding: 10px 0;
+    margin-bottom: 7vw;
+}
+
+.discount__text {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 50px;
+}
+
+.discount__text span {
+    font-size: 2rem;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #fff0ed;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    position: relative;
+}
+
+.footer__beans {
+    position: absolute;
+    left: 100px;
+    bottom: 55px;
+}
+
+.footer__beans--bottom {
+    position: absolute;
+    bottom: 10px;
+    right: -30px;
+}
+
+.footer__beans--image {
+    height: 120px;
+}
+
+.footer__smaller-text {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 0.3;
+}
+
+.footer__icon {
+    display: inline-block;
+}
+
+.footer__address,
+.footer__hours,
+.footer__social {
+    margin-right: 8%;
+}

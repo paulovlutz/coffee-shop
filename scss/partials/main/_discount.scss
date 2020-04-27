@@ -1,0 +1,13 @@
+@mixin discout {
+    min-width: 400px;
+    max-width: 60%;
+    background-color: #000;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0;
+    margin-bottom: 7vw;
+}
+
+.discount {
+    @include discout();
+}
